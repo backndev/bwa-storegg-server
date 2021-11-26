@@ -63,7 +63,13 @@ module.exports = {
 
     checkOut : async (req, res) => {
         try {
-            const { accountUser, name, nominal, voucher, payment, bank } = req.body
+            const { 
+                accountUser, 
+                name, 
+                nominal, 
+                voucher, 
+                payment, 
+                bank } = req.body
 
             const res_voucher = await Voucher.findOne({ _id : voucher })
             .select('name category _id thumbnail user')
