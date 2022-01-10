@@ -77,7 +77,6 @@ module.exports = {
                             username : player.username,
                             email : player.email,
                             name : player.name,
-                            phoneNumber : player.phoneNumber,
                             avatar : player.avatar
                         }
                     }, config.jwtKey)
